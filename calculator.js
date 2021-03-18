@@ -1,12 +1,9 @@
-
 function update(){
     let bill = document.getElementById('your-bill').value
-    let tipPercent = document.getElementById('your-bill').value;
-    let splitBill = document.getElementById('your-bill').value
-    // console.log(bill, tipPercent, splitBill)
-}   
+    let tipPercent = document.getElementById('tip-input').value;
+    let splitInput = document.getElementById('split-input').value
+    console.log(bill, tipPercent, splitInput)
+} 
 
-
-
-
-// bill.addEventListener('click', () => {
+let containter = document.getElementById('container')
+container.addEventListener('input', update);
