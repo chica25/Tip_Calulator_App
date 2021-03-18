@@ -12,44 +12,46 @@
             <h1>Quick Tip</h1>
 
             <section>
-                <div>
-                    <label for="">Bill</label>
+                <div class="bill">
+                    <label for="your-bill">Bill</label>
                     <input type="number" placeholder="your bill" id="your-bill" />
                 </div>
                     <div>
-                        <div>
-                            <label for="">Select Tip</label>
+                        <div class="space-btw">
+                            <label for="tip-input">Select Tip</label>
                             <span id="tip-percent">0%</span>
-                            <div>
-                                <input type="range" value="0" id="tip-input" />
-                            </div>
                         </div>
-                        <span>Tip</span>
-                        <span id="tip-value"></span>
-                    </div>
-                    <hr>
-                    <div>
-                        <span>Total</span>
+                            <input type="range" value="0" id="tip-input" />
+                        </div>
+                        <div class="space-btw">
+                            <span>Tip</span>
+                            <span id="tip-value"></span>
+                        </div>
+                        <hr>
+                        <div class="space-btw total">
+                            <span>Total</span>
                         <span id="total-with-tip"></span>
                     </div>
             </section>
 
             <section>
                 <div>
-                    <div>
-                        <label for="">Split</label>
+                    <div class="space-btw">
+                        <label for="split-input">Split</label>
                         <span id="split-value">1 person</span>
                     </div>
                     <input type="range" min="1" max="10" value="1" id="split-input">
                 </div>
-                <div>
+                <div class="space-btw">
                     <span>Bill each</span>
                     <span id="bill-each"></span>
-                    <div>
+                </div>
+                    
+                    <div class="space-btw">
                         <span>Tip Each</span>
                         <span id="tip-each"></span>
                     </div>
-                </div>
+            
             </section>
         </main>
             
