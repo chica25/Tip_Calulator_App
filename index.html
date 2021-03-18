@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+    body>
+        <main>
+            <h1>Quick Tip</h1>
+
+            <section>
+                <div>
+                    <label for="">Bill</label>
+                    <input type="number" placeholder="your bill" id="your-bill" />
+                </div>
+                    <div>
+                        <div>
+                            <label for="">Select Tip</label>
+                            <span id="tip-percent">0%</span>
+                            <div>
+                                <input type="range" value="0" id="tip-input" />
+                            </div>
+                        </div>
+                        <span>Tip</span>
+                        <span id="tip-value"></span>
+                    </div>
+                    <hr>
+                    <div>
+                        <span>Total</span>
+                        <span id="total-with-tip"></span>
+                    </div>
+            </section>
+
+            <section>
+                <div>
+                    <div>
+                        <label for="">Split</label>
+                        <span id="split-value">1 person</span>
+                    </div>
+                    <input type="range" min="1" max="10" value="1" id="split-input">
+                </div>
+                <div>
+                    <span>Bill each</span>
+                    <span id="bill-each"></span>
+                    <div>
+                        <span>Tip Each</span>
+                        <span id="tip-each"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+            
+            <script src="calculator.js"></script>
+    </body>
+</html>
