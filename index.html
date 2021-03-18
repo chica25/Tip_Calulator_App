@@ -17,7 +17,7 @@
             <section>
                 <div class="bill">
                     <label for="your-bill">Bill</label>
-                    <input type="number" placeholder="your bill" id="your-bill" />
+                    <input type="number" placeholder="your bill" id="your-bill" oninput="update()" />
                 </div>
                     <div>
                         <div class="space-btw">
@@ -56,8 +56,16 @@
                     </div>
             
             </section>
-        </main>
-            
-            <script src="calculator.js"></script>
-    </body>
+        </main>    
+            <script>       
+                function update(){
+                    let bill = document.getElementById('your-bill').value
+                    let tipPercent = document.getElementById('your-bill').value;
+                    let splitBill = document.getElementById('your-bill').value
+                    // console.log(bill, tipPercent, splitBill)
+                } 
+
+
+                </script>
+        </body>
 </html>
